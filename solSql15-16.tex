@@ -1,0 +1,333 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\small,
+  identifierstyle=\ttfamily,
+  keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
+  stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
+  morekeywords={REFERENCES}
+}
+
+\title{Solución ejercicios de SQL}
+\author{
+  Iago Ossorio Astray \\
+  \texttt{iagooa@protonmail.com}
+}
+
+\begin{document}
+  \maketitle
+  \begin{enumerate}
+    \item Halla los empleados que tienen una comisión superior a la mitad de su
+      salario.
+      \lstinputlisting[language=SQL, frame=single]{queries/q1.sql}
+
+    \item Halla los empleados que no tienen comisión, o que la tengan menor o
+      igual que el 25\% de su salario.
+      \lstinputlisting[language=SQL, frame=single]{queries/q2.sql}
+
+    \item Obtén los empleados que no son supervisados por ningún otro.
+      \lstinputlisting[language=SQL, frame=single]{queries/q3.sql}
+
+    \item Para los empleados que tengan comisión, obtén sus nombres y el
+      cociente entre su salario y su comisión (excepto cuando la comisión sea
+      cero), ordenando el resultado por nombre.
+      \lstinputlisting[language=SQL, frame=single]{queries/q4.sql}
+
+    \item Para los empleados que tengan como jefe a un empleado con código mayor
+      que el suyo, obtén los que reciben de salario más de 1000 y menos de 2000,
+      o que están en el departamento 30.
+      \lstinputlisting[language=SQL, frame=single]{queries/q5.sql}
+
+    \item Obtén el nombre, salario, comisión y salario total (salario+comisión,
+      si tiene comisión) de los empleados con salario total superior a 2300.
+      \lstinputlisting[language=SQL, frame=single]{queries/q6.sql}
+
+    \item Obtén los puestos de trabajo que hay en cada departamento, de forma
+      que no se repitan filas.
+      \lstinputlisting[language=SQL, frame=single]{queries/q7.sql}
+
+    \item Obtén el salario más alto de la empresa, el total destinado a
+      comisiones y el número de empleados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q8.sql}
+
+    \item Halla el nombre el último empleado por orden alfabético.
+      \lstinputlisting[language=SQL, frame=single]{queries/q9.sql}
+
+    \item Halla el salario más alto, el más bajo, y la diferencia entre ellos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q10.sql}
+
+    \item ¿Cúantos empleos diferentes, cuántos empleados, y cuántos salarios
+      diferentes encontramos en el departamento 30, y a cuánto asciende la suma
+      de salarios de dicho departamento?
+      \lstinputlisting[language=SQL, frame=single]{queries/q11.sql}
+
+    \item ¿Cúantos empleados tiene el departamento 20?
+      \lstinputlisting[language=SQL, frame=single]{queries/q12.sql}
+
+    \item ¿Cúantos empleados tienen comisión?
+      \lstinputlisting[language=SQL, frame=single]{queries/q13.sql}
+
+    \item ¿Qué empleos distintos encontramos en la empresa, y cúantos empleados
+      desempeñan cada uno de ellos?
+      \lstinputlisting[language=SQL, frame=single]{queries/q14.sql}
+
+    \item Halla la suma de salarios de cada departamento, junto con el código
+      del departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q15.sql}
+
+    \item Para cada departamento muestra cuántos proyectos controla, junto con
+      el código del departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q16.sql}
+
+    \item Muestra los proyectos en los que trabaja al menos tres empleados y
+      cuántas horas trabajan en dicho proyectos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q17.sql}
+
+    \item Para cada departamento muestra cuántos proyectos controla en cada
+      ciudad.
+      \lstinputlisting[language=SQL, frame=single]{queries/q18.sql}
+
+    \item Para cada departamento muestra cuántos empleados tiene que ganen más
+      de 1500.
+      \lstinputlisting[language=SQL, frame=single]{queries/q19.sql}
+
+    \item Muestra los departamentos que tienen un salario mínimo mayor o igual
+      a 1000. Muestra su código y cuántos empleados tiene.
+      \lstinputlisting[language=SQL, frame=single]{queries/q20.sql}
+
+    \item Muestra los departamentos y los trabajos donde hay por lo menos dos
+      trabajadores con ese puesto de trabajo.
+      \lstinputlisting[language=SQL, frame=single]{queries/q21.sql}
+
+    \item Halla los datos de los empleados cuyo salario es mayor que el del
+      empleado de código 7934, ordenando por el salario.
+      \lstinputlisting[language=SQL, frame=single]{queries/q22.sql}
+
+    \item Obtén los empleados que trabajan en Dallas o New York.
+      \lstinputlisting[language=SQL, frame=single]{queries/q23.sql}
+
+    \item Halla los empleados cuyo salario supera o coincide con la media del
+      salario de la empresa.
+      \lstinputlisting[language=SQL, frame=single]{queries/q24.sql}
+
+    \item Obtén los empleados del departamento 10 que tienen el mismo empleo
+      que alguien del departamento de Ventas. Desconocemos el código de dicho
+      departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q25.sql}
+
+    \item Halla los empleados que tienen por lo menos un empleado a su mando,
+      ordenados inversamente por nombre.
+      \lstinputlisting[language=SQL, frame=single]{queries/q26.sql}
+
+    \item Halla los empleados que no tienen ningún empleado a su mando.
+      \lstinputlisting[language=SQL, frame=single]{queries/q27.sql}
+
+    \item Obtén todos los departamentos sin empleados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q28.sql}
+
+    \item Muestra el código del empleado o empleados que más horas trabaja(n)
+      en cada proyecto.
+      \lstinputlisting[language=SQL, frame=single]{queries/q29.sql}
+
+    \item Obtén los empleados cuyo salario supera al de sus compañeros de
+      departamento. Si hay algún departamento donde dos, o más, empleados tienen
+      el salario más alto, entonces nadie supera a sus compañeros.
+      \lstinputlisting[language=SQL, frame=single]{queries/q30.sql}
+
+    \item Para cada puesto de trabajo el/los empleados que más ganan.
+      \lstinputlisting[language=SQL, frame=single]{queries/q31.sql}
+
+    \item ¿Qué empleados trabajan en ciudades de más de cinco letras? Ordena el
+      resultado inversamente por ciudades y normalmente por los nombres de los
+      empleados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q32.sql}
+
+    \item Para cada empleado muestra los proyectos en los que trabaja. Muestra
+      el nombre del empleado y el nombre del proyecto.
+      \lstinputlisting[language=SQL, frame=single]{queries/q33.sql}
+
+    \item Muestra los proyectos controlados por cada departamento. Muestra el
+      nombre del departamento y el nombre del proyecto. Deben aparecer todos los
+      departamentos, incluso si no controla ningún departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q34.sql}
+
+    \item Obtén un listado en el que se reflejen los empleados y los nombres de
+      sus jefes. En el listado deben aparecer todos los empleados, aunque no
+      tengan jefe.
+      \lstinputlisting[language=SQL, frame=single]{queries/q35.sql}
+
+    \item Los nombres de empleados contratados antes que su jefe.
+      \lstinputlisting[language=SQL, frame=single]{queries/q36.sql}
+
+    \item Para cada departamento, muestra los empleados que trabajan en
+      proyectos controlados por él. Muestra el nombre del departamento y el
+      código de los empleados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q37.sql}
+
+    \item Obtén el código de empleado, el nombre, el salario, el código del
+      proyecto y las horas que le dedica cada empleado vinculado a algún
+      proyecto, ordenado por el código del empleado.
+      \lstinputlisting[language=SQL, frame=single]{queries/q38.sql}
+
+    \item ¿Cúantos empleados hay en cada departamento, y cuál es la media del
+      salario de cada uno? Indique el nombre del departamento para clarificar el
+      resultado.
+      \lstinputlisting[language=SQL, frame=single]{queries/q39.sql}
+
+    \item Muestra la suma de salarios de los empleados de cada departamento que
+      tienen un salario superior al salario medio de la empresa. Muestra el
+      nombre del departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q40.sql}
+
+    \item Para cada proyecto controlado por el departamento 30, indica su número
+      , ciudad, número de empleados participantes en el proyecto, las horas
+      dedicadas por el empleado que más ha trabajado, y las horas dedicadas por
+      el que menos ha trabajado, y la diferencia entre ellas.
+      \lstinputlisting[language=SQL, frame=single]{queries/q41.sql}
+
+    \item Por cada departamento muestra total de horas trabajadas en proyectos
+      por los empleados de cada puesto de trabajo. Muestra el código de
+      departamento y el nombre del puesto de trabajo
+      \lstinputlisting[language=SQL, frame=single]{queries/q42.sql}
+
+    \item Para cada empleado muestra su nombre y cuántos empleados supervisa de
+      cada puesto de trabajo.
+      \lstinputlisting[language=SQL, frame=single]{queries/q43.sql}
+
+    \item Muestra para cada proyecto cuántas horas trabajan en total todos los
+      empleados que tienen un salario superior al salario medio de la empresa.
+      Muestra el nombre del proyecto.
+      \lstinputlisting[language=SQL, frame=single]{queries/q44.sql}
+
+    \item Para cada departamento, muestra su código, su nombre, el salario más
+      alto y más bajo que cobran sus empleados, la diferencia entre estos dos
+      salarios, y el número de proyectos a cargo del departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q45.sql}
+
+    \item Considerando empleados con salario menor de 5000, halla la media de
+      los salarios de los departamentos cuyo salario mínimo supera a 900.
+      Muestra también el código y el nombre de los departamentos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q46.sql}
+
+    \item Lista los empleados que tengan el mayor salario de su departamento,
+      mostrando el nombre del empleado, su salario y el nombre del departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q47.sql}
+
+    \item El puesto de trabajo con el salario medio más alto.
+      \lstinputlisting[language=SQL, frame=single]{queries/q48.sql}
+
+    \item Para cada supervisor, muestra su subordinado(s) que más gana.
+      \lstinputlisting[language=SQL, frame=single]{queries/q49.sql}
+
+    \item Deseamos saber cuántos empleados supervisa cada jefe. Para ello, obtén
+      un listado en el que se reflejen el código y el nombre de cada jefe, junto
+      al número de empleados que supervisa directamente. Como puede haber
+      empleados sin jefe, para estos se indicará sólo el número de ellos, y los
+      valores restantes (código y nombre del jefe) se dejarán como nulos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q50.sql}
+
+    \item Hallar el/los departamento(s) cuya suma de salarios sea la más alta,
+      mostrando esta suma de salarios y el nombre del departamento
+      \lstinputlisting[language=SQL, frame=single]{queries/q51.sql}
+
+    \item Obtén los datos de los empleados que cobren los dos mayores salarios
+      de la empresa. (Nota: Procure hacer la consulta de forma que sea fácil
+      obtener los empleados de los N mayores salarios).
+      \lstinputlisting[language=SQL, frame=single]{queries/q52.sql}
+
+    \item Obtén las localidades que no tienen departamentos sin empleados y en
+      las que trabajen al menos cuatro empleados. Indica también el número de
+      empleados que trabajan en esas localidades. (Nota: Por ejemplo, puede que
+      en A Coruña existan dos departamentos, uno con más de cuatro empleados y
+      otro sin empleados, en tal caso, A Coruña no debe aparecer en el resultado
+      , puesto que tiene un departamento SIN EMPLEADOS, a pesar de tener otro
+      con empleados Y tener más de cuatro empleados EN TOTAL. ATENCIÓN, la
+      restricción de que tienen que ser cuatro empleados se refiere a la
+      totalidad de los departamentos de la localidad).
+      \lstinputlisting[language=SQL, frame=single]{queries/q53.sql}
+
+    \item Obtén un listado de todos los empleados (código, nombre) donde
+      aparezca el total de horas dedicado a proyectos. Deben aparecer todos los
+      empleados aunque no trabajen en proyectos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q54.sql}
+
+    \item Nombre del departamento(s) que tiene(n) el mayor número de
+      supervisores.
+      \lstinputlisting[language=SQL, frame=single]{queries/q55.sql}
+
+    \item Nombres de empleados que trabajan solos en algún proyecto.
+      \lstinputlisting[language=SQL, frame=single]{queries/q56.sql}
+
+    \item Para cada empleado, número, nombre y contar cuantos ganan menos que él
+      (si no hay ninguno, debe aparecer un 0).
+      \lstinputlisting[language=SQL, frame=single]{queries/q57.sql}
+
+    \item Para cada empleado, número, nombre y contar cuantos (descontando a él
+      mismo) ganan lo mismo o menos que él (si no hay ninguno, debe aparecer un 0).
+      \lstinputlisting[language=SQL, frame=single]{queries/q58.sql}
+
+    \item Para cada jefe mostrar cuántos empleados supervisa en cada
+      departamento (los empleados supervisados no tienen porque ser del mismo
+      departamento que el supervisor). Mostrar nombre de empleado y código
+      departamento (de los empleados supervisados).
+      \lstinputlisting[language=SQL, frame=single]{queries/q59.sql}
+
+    \item Idem mostrando todos los empleados, y en aquellos que no son jefes,
+      mostrando un cero en el número de empleados supervisados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q60.sql}
+
+    \item Para cada departamento que tenga, por lo menos, dos empleados sin
+      comisión, muestra el nombre del departamento, y cuántos empleados tiene en
+      total (con y sin comisión).
+      \lstinputlisting[language=SQL, frame=single]{queries/q61.sql}
+
+    \item ¿Cúal es la ciudad (o ciudades, si hay más de una) en la que hasta el
+      momento se han trabajado más horas en proyectos? Indica el nombre de la
+      ciudad, y el número de horas.
+      \lstinputlisting[language=SQL, frame=single]{queries/q62.sql}
+
+    \item Muestra para cada proyecto su código y, de los empleados que trabajan
+      en dicho proyecto, el nombre del empleado que más gana de cada puesto de
+      trabajo.
+      \lstinputlisting[language=SQL, frame=single]{queries/q63.sql}
+
+    \item Para cada empleado, obtén su código y su nombre, y el código y nombre
+      del proyecto al que dedica más horas ese empleado. Muestra también las
+      horas, y ordena el resultado por nombre de empleado.
+      \lstinputlisting[language=SQL, frame=single]{queries/q64.sql}
+
+    \item Considerando sólo los empleados que tienen el máximo salario de cada
+      puesto de trabajo, muestra para cada departamento su nombre y cuántos de
+      dichos empleados trabajan en ese departamento.
+      \lstinputlisting[language=SQL, frame=single]{queries/q65.sql}
+
+    \item Para cada empleado muestra su nombre, cuántos empleados supervisa en
+      total, cuántos con comisión y cuántos sin comisión. Si el empleado no
+      supervisa a nadie, o no supervisa empleados sin/con comisión, se debe
+      mostrar un cero en el número correspondiente.
+      \lstinputlisting[language=SQL, frame=single]{queries/q66.sql}
+
+    \item Muestra el nombre y trabajo de los empleados que son supervisores y
+      que tienen el mismo trabajo que todos sus subordinados.
+      \lstinputlisting[language=SQL, frame=single]{queries/q67.sql}
+
+    \item Para cada departamento muestra cuántos jefes tiene y cuántos
+      subordinados tienen esos jefes (los subordinados no tienen porque ser del
+      mismo departamento que el jefe). Deben aparecer todos los departamentos.
+      \lstinputlisting[language=SQL, frame=single]{queries/q68.sql}
+
+    \item Muestra el nombre de los departamentos con más de tres empleados de
+      los cuales al menos dos son jefes.
+      \lstinputlisting[language=SQL, frame=single]{queries/q69.sql}
+
+    \item Para cada jefe, muestra su nombre y cuántos empleados supervisa en
+      departamentos diferentes al suyo. Si un jefe no supervisa a ningún
+      empleado de otro departamento, muestra un cero.
+      \lstinputlisting[language=SQL, frame=single]{queries/q70.sql}
+  \end{enumerate}
+\end{document}
