@@ -1,0 +1,3 @@
+SELECT *
+FROM emp
+WHERE mgr IS NULL;
